@@ -1,4 +1,4 @@
-package com.app.endapp;
+package com.mrfekri.mathArea;
 
 import android.content.Context;
 
