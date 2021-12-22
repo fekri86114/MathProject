@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Math.easy</string>
+    <string name="app_name">Math Easy</string>
     <string name="app_title">Area and perimeter of geometric shapes</string>
     <string name="circle">Circle</string>
     <string name="rectangle">Rectangle</string>

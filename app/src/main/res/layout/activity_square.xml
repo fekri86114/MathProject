@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
     tools:context=".SquareActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/image_square"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_2x"
         app:srcCompat="@drawable/square"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,9 +20,15 @@
         android:id="@+id/edit_side"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:hint="@string/enter_the_side"
-        android:textColorHint="@color/white"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:padding="@dimen/button_padding"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edittext_shape"
         android:layout_marginEnd="@dimen/button_margin"
+        android:fontFamily="@font/roboto_black"
         android:layout_marginStart="@dimen/button_margin"
         app:layout_constraintTop_toBottomOf="@id/image_square" />
 
@@ -33,9 +39,10 @@
         app:layout_constraintTop_toBottomOf="@id/edit_side"
         android:layout_marginTop="30dp"
         android:text="@string/calculate"
+        android:fontFamily="@font/roboto_extra_bold"
         android:textSize="20sp"
-        android:textStyle="italic"
-        android:textColor="@color/pink"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/white"
         android:layout_marginEnd="@dimen/button_margin"
         android:layout_marginStart="@dimen/button_margin"/>
 
@@ -46,9 +53,11 @@
         app:layout_constraintTop_toBottomOf="@id/button_calculate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="@dimen/button_margin"
-        android:textSize="18sp"
-        android:textColor="@color/white" />
+        android:layout_marginTop="@dimen/margin_2x"
+        android:textSize="@dimen/text_view_large"
+        android:fontFamily="@font/roboto_black"
+        tools:text="jjhcj"
+        android:textColor="@color/black" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text_perimeter_result"
@@ -57,8 +66,10 @@
         app:layout_constraintTop_toBottomOf="@id/text_area_result"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="@dimen/button_margin"
-        android:textSize="18sp"
-        android:textColor="@color/white" />
+        android:layout_marginTop="@dimen/margin_2x"
+        android:textSize="@dimen/text_view_large"
+        android:fontFamily="@font/roboto_black"
+        tools:text="jjhcj"
+        android:textColor="@color/black" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

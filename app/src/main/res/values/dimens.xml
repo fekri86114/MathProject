@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="button_margin">16dp</dimen>
+    <dimen name="margin_2x">24dp</dimen>
+    <dimen name="text_view_large">20sp</dimen>
+    <dimen name="radius">8dp</dimen>
+    <dimen name="button_padding">16dp</dimen>
+    <dimen name="text_view_very_large">24sp</dimen>
 </resources>
