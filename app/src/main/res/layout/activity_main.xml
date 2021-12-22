@@ -1,61 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:cardBackgroundColor="@color/white"
-    app:cardCornerRadius="10dp"
-    app:cardElevation="4dp"
-    app:cardPreventCornerOverlap="true"
-    app:cardUseCompatPadding="true">
+    android:background="@drawable/main_bg"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_title"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/math_wallpaper"
-        tools:context=".MainActivity">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/app_title"
+        android:fontFamily="@font/roboto_black"
+        android:textColor="@color/white"
+        android:layout_marginEnd="@dimen/button_margin"
+        android:layout_marginStart="@dimen/button_margin"
+        android:textSize="@dimen/text_view_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/textview_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:gravity="center"
-            android:text="@string/app_title"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="italic"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:padding="@dimen/button_padding"
+        android:background="@drawable/button_shape"
+        android:layout_marginEnd="20dp"
+        android:text="@string/circle"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_view_very_large"
+        android:fontFamily="@font/roboto_extra_bold"
+        app:layout_constraintTop_toBottomOf="@id/textview_title" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button_circle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="20dp"
-            android:text="@string/circle"
-            android:textColor="#4E2816"
-            android:textSize="22sp"
-            android:textStyle="italic"
-            app:layout_constraintTop_toBottomOf="@id/textview_title" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_square"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        android:padding="@dimen/button_padding"
+        android:background="@drawable/button_shape"
+        android:layout_marginEnd="20dp"
+        android:text="@string/square"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_view_very_large"
+        android:fontFamily="@font/roboto_extra_bold"
+        app:layout_constraintTop_toBottomOf="@id/button_circle" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button_square"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="20dp"
-            android:text="@string/square"
-            android:textColor="#4E2816"
-            android:textSize="22sp"
-            android:textStyle="italic"
-            app:layout_constraintTop_toBottomOf="@id/button_circle" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
